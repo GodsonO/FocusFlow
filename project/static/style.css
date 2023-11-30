@@ -1,0 +1,89 @@
+body {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+    background-color:rgba(137, 89, 54, 0.7);
+    font-family: 'Red Hat Text', sans-serif;
+    text-align: center;
+    padding:30px;
+}
+
+
+.box{
+    background-color: rgba(137, 89, 54, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.image{
+    width: 20%;
+    height: 20%;
+}
+h1 {
+    font-size:25px;
+    color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+
+input {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    text-align: 10px;
+    text-indent: 7%;
+    font-family: 'Red Hat Text', sans-serif; }
+
+    ::placeholder {
+        color: black;
+        font-weight: bold;
+    }
+
+    input:hover::placeholder{
+        color:transparent;
+    }
+
+    label {
+        color: white;
+    font-weight: bolder;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+
+
+input:focus, button:focus {
+    outline: none;
+     border-color: #9ecaed;
+     box-shadow: 0 0 5px #9ecaed;
+     transition: 0.3s;
+    
+}
+
+button {
+    background: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    margin-top: 45px;
+    border: 2px solid #09b32e;
+    color: white;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #09b32e;
+    color: white;
+    transition: 0.3s;
+}

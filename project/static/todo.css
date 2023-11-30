@@ -1,0 +1,152 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header{
+    background-image: url(img/mount.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    height: 220px;
+}
+.opa{
+    background-color: rgba(151, 61, 132, 0.7);
+    height: 220px;
+  
+}
+
+.box{
+    /* background: red; */
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 40%;
+    min-width: 450px;
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px #9ecaed;
+    transition: 0.3s;
+   
+   
+
+}
+.box h1, h4{
+    text-align: left;
+    color: #fff;
+}
+.fx{
+    position: fixed;
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    margin: 10px 0px 0;
+    border: none;
+    text-align: 10px;
+    text-indent: 7%;
+    font-family: 'Red Hat Text', sans-serif; }
+
+    ::placeholder {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    input[type="text"]:hover::placeholder{
+        color:transparent;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+         border-color: #9ecaed;
+         box-shadow: 0 0 5px #9ecaed;
+         transition: 0.3s;
+        
+    }
+
+    input[type="submit"] {
+        background: #09b32e;
+        border-radius: 5px;
+       padding: 10px;
+        color: white;
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 12px;
+        font-weight: bolder;
+        cursor: pointer;
+        border: none;
+    }
+
+    .list{
+        /* margin-top: 70px; */
+        border-radius: 10px;
+        padding: 20px;
+        margin: auto;
+        width: 40%;
+        min-width: 450px;
+        position: relative;
+        /* transform: translate(-50%, -50%); */
+        box-shadow: 0 0 5px #9ecaed;
+        transition: 0.3s;
+    }
+
+    ul li{
+        list-style-type: none;
+        padding: 10px;
+        border-bottom: 1px solid #0a0a0a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    li a{ 
+        text-decoration: none;
+      
+    }
+    .del{
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      
+
+    }
+    .ed{
+        background-color: #b36f09;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .done{
+        /* background-color: #b36f09; */
+        color: green;
+        border: 1px solid green;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .log a{
+        text-decoration: none;
+        color: red;
+        font-size: 15px;
+        font-family: 'Red Hat Text', sans-serif;
+        border:2px solid red;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+   
+   

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../static/todo.css">
+
+</head>
+<body>
+    <section class="header">
+        <div class="opa"></div>
+    </section>
+    
+<section class="box">
+    <h1>Welcome, {{ username }}!</h1>
+        <h4>What will you like to achieve today?</h4>
+    <form action="{{ url_for('add') }}" method="post">
+        <!-- <label for="todo">Task:</label> -->
+        <input type="text" id="todo" name="todo">
+        <input type="submit" value="Add Task">
+    </form>
+</section>
+
+<section class="list">
+    <p>Task To Be Done:</p>
+
+
+<ul>
+    {% for todo in todos %}
+    <li>
+     <input type="checkbox"  name="done" {% if todo['done'] %} checked{%endif%} disabled onchange="this.form.submit()">   
+      <span {%if todo['done']%} style="text-decoration:line-through; color: red;" {%endif%}>
+        {{ todo ['task'] }}
+    </span> 
+    
+        <a href="{{ url_for('check', index=loop.index0) }}" class="done">Done</a>
+
+        <a href="{{ url_for('edit', index=loop.index0) }}" class="ed">Edit</a>
+
+        <a href="{{ url_for('delete', index=loop.index0) }}" class="del">Delete</a>
+    
+ 
+
+    </li>
+    {% endfor %}
+</ul>
+
+   
+</section>
+    
+
+    <div class="log">
+        <a href="{{ url_for('logout') }}">Logout</a>
+
+    </div>
+    <!-- Your Todo List UI goes here -->
+</body>
+</html>
